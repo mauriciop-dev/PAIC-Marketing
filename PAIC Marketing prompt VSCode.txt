@@ -1,0 +1,159 @@
+Vas a crear 4 paginas web en HTML, CSS, JavaScript (efectos de tree.js) con la paleta e indicaciones como las siguientes:
+
+🎨 Paleta de Colores para PAIC IAaaS
+
+La paleta de colores se extrae del logotipo y de los tonos predominantes en las interfaces que ha compartido. El objetivo es proyectar profesionalismo, confianza y modernidad tecnológica.
+
+Nombre del Color
+
+Código HEX
+
+Rol Principal en el Sitio Web
+
+Azul PAIC (Primario)
+
+#1e3a8a
+
+Fondo de encabezados, barras de navegación, secciones principales, botones primarios (sólidos). Transmite confianza y estabilidad. (Tailwind: bg-blue-800 o bg-indigo-900 ajustado).
+
+Cian Tecnológico (Acento)
+
+#06b6d4
+
+Resaltado de texto importante, íconos, bordes activos, enlaces y el chat/IA. Simboliza inteligencia y futuro. (Tailwind: text-sky-500 o bg-cyan-500).
+
+Blanco Nítido
+
+#FFFFFF
+
+Fondo principal del contenido, tarjetas (cards), texto principal sobre fondo oscuro. Aporta claridad y limpieza. (Tailwind: bg-white).
+
+Gris Oscuro (Texto)
+
+#1f2937
+
+Texto de cuerpo y títulos. Ofrece alto contraste para garantizar la legibilidad. (Tailwind: text-gray-800 o text-gray-900).
+
+Amarillo CTA (Llamada a la Acción)
+
+#f59e0b
+
+Botones de "Prueba Gratis" / CTA. Un color cálido que contrasta con el azul frío y atrae la atención. (Tailwind: bg-amber-500 o bg-yellow-600).
+
+Rojo de Alerta (Mora)
+
+#dc2626
+
+Se utiliza solo en las landing pages de dolor (ej. Mora) y para mensajes de error o advertencia. (Tailwind: bg-red-600).
+
+📐 Lineamientos Generales de Diseño
+
+El diseño debe reflejar el concepto de "No somos un software, somos su asistente inteligente", poniendo el foco en el resultado (ahorro, informes) y no en la complejidad de la interfaz.
+
+1. Tipografía y Jerarquía
+
+Familia Tipográfica: Utilizar una fuente Sans-serif moderna y legible, como Inter (ya utilizada en los archivos anteriores) o Poppins/Nunito. Esto refuerza la sensación de tecnología y profesionalismo.
+
+Jerarquía Clara:
+
+Títulos (H1, H2): Letras grandes, audaces (semi-bold o extra-bold) y utilizando el Azul PAIC o Gris Oscuro. Usar el Cian Tecnológico para destacar la parte de IA o el beneficio.
+
+Cuerpo de Texto: Alto contraste (Gris Oscuro sobre Blanco) y espaciado generoso para facilitar la lectura de párrafos largos.
+
+2. Layout y Estructura
+
+Diseño Limpio y Minimalista: Utilice mucho espacio en blanco. Evite la sobrecarga visual, ya que la plataforma en sí ya está llena de datos. El sitio web debe ser una "pausa" visual.
+
+Diseño Centrado en Tarjetas (Cards): Para los beneficios y funcionalidades, use tarjetas con bordes redondeados y sombras suaves (elevación sutil). El Cian Tecnológico puede usarse como borde superior para indicar funcionalidad o valor.
+
+"Mobile First" (Diseño Responsivo): El sitio debe ser completamente funcional y agradable en dispositivos móviles, ya que la administración residencial a menudo se realiza en movimiento. Use las clases responsivas de Tailwind (sm:, md:, lg:) para asegurar una experiencia fluida.
+
+3. Elementos de Interfaz y Estilo
+
+Botones (CTAs):
+
+Principal ("Prueba Gratis"): Debe usar el Amarillo CTA (#f59e0b) con texto oscuro para máximo contraste, esquinas redondeadas (ej. rounded-xl) y una sombra fuerte (shadow-2xl) para hacerlo irresistible.
+
+Secundario: Azul PAIC sobre blanco, o Cian Tecnológico con texto blanco.
+
+Iconografía: Utilice íconos simples, claros y preferiblemente lineales o duotono (si es posible en Cian Tecnológico) para ilustrar los beneficios clave. (Ej. Lucide icons o SVG simples).
+
+Imágenes (Screenshots): Las imágenes de la interfaz deben estar siempre enmarcadas con esquinas redondeadas y tener una sombra sutil para que parezcan integradas y no simplemente flotando en la página.
+
+4. Experiencia de Usuario (UX)
+
+Enfoque de Beneficio: Cada sección debe responder a la pregunta: "¿Qué gano yo?". Por ejemplo, en lugar de "Módulo de Cobro", usar "Olvídese de la Mora y los Conflictos".
+
+Prueba Social: Incluir testimonios o logos de conjuntos residenciales que ya usen PAIC (si están disponibles) para generar confianza.
+
+Velocidad de Carga: El diseño debe priorizar imágenes optimizadas y el uso de clases en línea (como Tailwind) para asegurar una carga rápida y evitar el abandono del usuario.
+
+1. la pagina principal, debes usar la imagen paic_home.png e insertar este video https://www.youtube.com/watch?v=aQ9mIPAAjjU&t=12s también debe tener un llamado a la accion para probar la aplicación por 14 días y ese llamado a la accion debe tener esta url https://app.paicai.com.co/?source=marketing
+
+debe resaltar aspectos como estos: Administra con Inteligencia. Recupera tu Tiempo.
+PAIC es su Asistente de Inteligencia Artificial para la Administración Residencial. Deje de hacer Excel, empiece a hacer gestión.
+
+Beneficios Inmediatos de PAIC
+💸
+Cero Mora
+El asistente se encarga de la comunicación automática y precisa con deudores, liberándolo de la confrontación.
+
+📈
+Informes al Instante
+Pregúntele al chatbot qué necesita saber (gastos, saldos) y obtenga la respuesta en segundos.
+
+🗓️
+Gestión 24/7
+Seguridad (visitantes), reservas de áreas comunes y vencimientos organizados en un solo lugar.
+
+Su prueba de 14 días lo espera
+Acceda al poder de la IA en su administración hoy mismo. Sin compromiso, sin tarjeta de crédito.
+
+Iniciar Prueba Gratuita Ahora
+
+2. la pagina cobro a deudores, debes usar la imagen paic_mora.png también debe tener un llamado a la accion para probar la aplicación por 14 días y ese llamado a la accion debe tener esta url https://app.paicai.com.co/?source=marketing
+
+¿Mora que Ahorca? Deje que la IA cobre por usted.
+Interfaz de PAIC mostrando la gestión de mora y pagos
+El cobro es incómodo, consume tiempo y deteriora relaciones. PAIC transforma la obligación en un proceso profesional y automatizado.
+
+Funcionalidad Clave: Comunicaciones de Cobro Inteligentes
+PAIC identifica deudores y genera avisos con la formalidad exacta vía correo o WhatsApp (si aplica), liberándolo de la confrontación.
+
+🚀
+Reduce la cartera vencida en un 30% promedio.
+✅
+Documentación automática para procesos legales.
+¡Prueba PAIC Gratis por 14 Días (Sin Tarjeta)!
+
+3. la pagina tareas, debes usar la imagen paic_tareas.png también debe tener un llamado a la accion para probar la aplicación por 14 días y ese llamado a la accion debe tener esta url https://app.paicai.com.co/?source=marketing
+
+El Orden Llega. No Olvide un Solo Vencimiento Crítico.
+Interfaz de PAIC mostrando el gestor de tareas y vencimientos
+Los vencimientos críticos (seguros, inspecciones, contratos) son una fuente constante de estrés y riesgo legal.
+
+Funcionalidad Clave: Gestor de Vencimientos Proactivo
+PAIC centraliza todas sus fechas límite y notifica a los responsables. Actúa como un asistente vigilante, asegurando el cumplimiento legal y el mantenimiento preventivo de su conjunto.
+
+🗓️
+Visualización de calendario centralizado y claro.
+🚨
+Alertas de vencimiento automatizadas (Funcionalidades 5 y 6).
+¡Prueba PAIC Gratis por 14 Días (Sin Tarjeta)!
+
+4. la pagina informes, debes usar la imagen paic_informe.png también debe tener un llamado a la accion para probar la aplicación por 14 días y ese llamado a la accion debe tener esta url https://app.paicai.com.co/?source=marketing
+
+¡De Horas a Segundos! Pregúntele a PAIC por sus informes.
+Interfaz de PAIC mostrando un informe detallado generado por IA
+Consultar datos significa abrir archivos, aplicar filtros y cruzar información. Su asistente lo hace en un instante, con una sola pregunta.
+
+Funcionalidad Clave: Consultas de Base de Datos por IA
+Gracias a su conexión con la Base de Datos Central, el chatbot de PAIC puede responder a cualquier pregunta financiera, de residentes o de proveedores en lenguaje natural. ¡Adiós a los filtros de Excel!
+
+💡
+Informes financieros detallados al momento.
+💬
+Pregunte en español, obtenga la data estructurada.
+¡Prueba PAIC Gratis por 14 Días (Sin Tarjeta)!
+
+Tambien puedes p oner de tu creatividad, estos son lineamientos generales

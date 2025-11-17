@@ -1,0 +1,93 @@
+:root{
+  --blue-paic:#1e3a8a;
+  --cyan:#06b6d4;
+  --white:#ffffff;
+  --text:#1f2937;
+  --cta:#f59e0b;
+  --danger:#dc2626;
+  --container-max:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--text);background:var(--white);}
+.container{max-width:var(--container-max);margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--blue-paic),#25409b);color:var(--white);}
+.nav-row{display:flex;align-items:center;gap:1rem;justify-content:space-between;padding:0.8rem 1rem}
+.brand{display:flex;align-items:center;gap:0.6rem;font-weight:800;font-size:1.15rem}
+.site-logo{height:36px;width:auto;border-radius:8px;box-shadow:0 6px 20px rgba(6,182,212,0.12);background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.6));padding:4px}
+.brand-text{font-weight:800;color:var(--white)}
+.main-nav a{color:rgba(255,255,255,0.9);text-decoration:none;margin:0 0.6rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:0.75rem;text-decoration:none;font-weight:600}
+.btn.cta{background:transparent;border:1px solid rgba(255,255,255,0.12);color:var(--white)}
+.primary-cta{background:var(--cta);color:var(--text);box-shadow:0 10px 30px rgba(0,0,0,0.15);border-radius:1rem}
+.secondary{background:transparent;border:1px solid rgba(31,41,55,0.06);color:var(--blue-paic)}
+
+/* Pulso sutil para botones de prueba de 14 días */
+@keyframes paic-pulse {
+  0% { transform: translateY(0) scale(1); box-shadow: 0 10px 30px rgba(245,158,11,0.10); }
+  50% { transform: translateY(-4px) scale(1.03); box-shadow: 0 26px 60px rgba(245,158,11,0.16); }
+  100% { transform: translateY(0) scale(1); box-shadow: 0 10px 30px rgba(245,158,11,0.10); }
+}
+
+.btn.cta, .primary-cta{
+  will-change: transform, box-shadow;
+  animation: paic-pulse 3.6s ease-in-out infinite;
+}
+
+.btn.cta:hover, .primary-cta:hover{
+  animation-play-state:paused;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(30,58,138,0.14);
+}
+
+/* Respeta usuarios que prefieren reducir movimiento */
+@media (prefers-reduced-motion: reduce){
+  .btn.cta, .primary-cta{ animation: none !important; }
+}
+
+.hero{position:relative;padding:3rem 0 4rem;overflow:hidden}
+.hero.alt{background:linear-gradient(180deg,rgba(30,58,138,0.04),transparent)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.hero-text h1{font-size:2rem;margin:0 0 0.5rem;color:var(--blue-paic);font-weight:800}
+.hero-text .lead{color:var(--text);margin-bottom:1rem}
+.benefits{list-style:none;padding:0;margin:0 0 1rem}
+.benefits li{margin:0.4rem 0}
+.hero-media{display:flex;flex-direction:column;gap:1rem}
+.hero-image{width:100%;height:auto;border-radius:12px;box-shadow:0 8px 30px rgba(31,41,55,0.08);transition:transform .18s ease,box-shadow .18s ease}
+
+/* Efecto uniforme para imágenes: sombra, borde redondeado y elevación al hover */
+.media-card img, .hero-image, .card img, .site-logo{
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(31,41,55,0.08);
+  transition:transform .22s ease,box-shadow .22s ease,filter .22s ease;
+}
+.media-card img:hover, .hero-image:hover, .card img:hover{
+  transform:translateY(-8px) scale(1.01);
+  box-shadow:0 28px 60px rgba(30,58,138,0.12);
+  filter:brightness(1.02);
+}
+.card{background:var(--white);border-radius:12px;padding:0.6rem}
+.video-card{padding:0}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}
+.card.feature{padding:1.25rem;border:1px solid rgba(31,41,55,0.04)}
+.card.feature h3{color:var(--blue-paic);margin-top:0}
+
+/* Centro y efecto de tarjeta para la página principal */
+.center-cards{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:2rem auto}
+.center-cards .card.feature{flex:0 1 300px;padding:1.25rem;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.9),#ffffff);border:1px solid rgba(6,182,212,0.08);box-shadow:0 12px 30px rgba(6,182,212,0.06);transition:transform .18s ease,box-shadow .18s ease}
+.center-cards .card.feature:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(30,58,138,0.12)}
+
+
+.site-footer{padding:2rem 0;text-align:center;color:rgba(31,41,55,0.7)}
+
+.hero-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:0.9}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr}
+  .hero-text h1{font-size:1.5rem}
+}
+
+/* Accessibility focus */
+a:focus{outline:3px solid var(--cyan);outline-offset:2px}
